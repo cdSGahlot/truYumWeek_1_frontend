@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>  
+    <head>    
+       <link rel="stylesheet" href="style/menu-item-list-customer-style.css">
+       <div class="navbar">
+           <span id="heading">truYum</span>
+           <img src="images/icon.png" id="icon" height="50" width="50">
+           <a href="cart.html" id="cart">Cart</a>
+           <a href="menu-item-list-customer.html" id="menu">Menu</a>
+       </div>
+   </head>
+
+   <body>
+       <br>
+       <br>
+       <h1 id="cart_heading" >Cart</h1><br>
+       <center><p id="message">Item removed from Cart Successfully</p></center>
+       <table id="menu_table">
+        <thead>
+            <th class="name" name="Name">Name</th>
+            <th class="free-delivery" name="Free Delivery">Free Delivery</th>
+            <th class="price" name="Price">Price</th>
+        </thead>
+        <tr>
+            <td class="name">Sandwich</td>
+            <td class="free-delivery">Yes</td>
+            <td class="price">Rs. 99.00</td>
+            <td class="action"><a href="./cart-notification.html">Delete</a></td>
+        </tr>
+        <tr>
+            <td class="name">Burger</td>
+            <td class="free-delivery">No</td>
+            <td class="price">Rs. 129.00</td>
+            <td class="action"><a href="./cart-notification.html">Delete</a></td>
+        </tr>
+        <tr>
+            <td class="name">Pizza</td>
+            <td class="free-delivery">No</td>
+            <td class="price">Rs. 149.00</td>
+            <td class="action"><a href="./cart-notification.html">Delete</a></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><b>Total</b></td>
+            <td><b>Rs. 377.00</b></td>
+            <td id="total-price"></td>
+            <td id="delete-element"  name="delete"></td>
+
+        </tr>
+        </table>
+       <footer>Copyright &copy 2019</footer>
+   </body>
+</html> 

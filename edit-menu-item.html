@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/edit-menu-item-style.css">
+        <div class="navbar">
+            <span id="heading">truYum</span>
+            <img src="images/icon.png" id="icon" height="50" width="50">
+            <a href="menu-item-list-admin.html" id="menu">Menu</a>
+        </div>
+    </head>
+    <body>
+        <br>
+        <br>
+        <h1 id="edit_menu_heading">Edit Menu Items</h1>
+        <form id="container" action="./edit-menu-item-status.html">
+            <label for="title">Name</label><br>
+            <input type="text" name="title" size="95" required="true">
+            <table id="edit-menu-table">
+
+                <tr>
+                    <td>Price(Rs.)</td>
+                    <td>Active</td>
+                    <td>Date of Launch</td>
+                    <td>Category</td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="price" required></td>
+                    <td>
+                        <input type="radio" name="inStock" value="yes">
+                        <label>Yes</label>
+                        <input type="radio" name="inStock" value="no">
+                        <label>No</label>
+                    </td>
+                    <td><input type="date" name="dateOfLaunch"></td>
+                    <td>
+                        <select name="category">
+                            <option>Starters</option>
+                            <option>Main Course</option>
+                            <option>Dessert</option>
+                            <option>Drinks</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="checkbox" class="check">
+                    <label>Free Delivery</label>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Save"  name="submit" class="save_btn">
+        </form>
+        <footer>Copyright &copy 2019</footer>
+    </body>
+</html>
